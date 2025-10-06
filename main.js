@@ -43,5 +43,9 @@ function getSignupFormErrors(firstname, email, password, reapetPasswrod){
      return errors;
 }
 
+alert(firstname_input.value);
+
+
+
 
 

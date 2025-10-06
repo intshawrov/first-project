@@ -85,5 +85,99 @@ form label{
       font-weight: 500;
 }
 
+form input{
+      box-sizing: border-box;
+      flex-grow: 1;
+      min-width: 0;
+      height: 50px;
+      padding: 1em;
+      font: inherit;
+      border-radius: 0 10px 10px 0;
+      -webkit-border-radius: 0 10px 10px 0;
+      -moz-border-radius: 0 10px 10px 0;
+      -ms-border-radius: 0 10px 10px 0;
+      -o-border-radius: 0 10px 10px 0;
+      border: 2px solid var(--input-color);
+      background-color: var(--input-color);
+      transition: 150ms ease;
+      -webkit-transition: 150ms ease;
+      -moz-transition: 150ms ease;
+      -ms-transition: 150ms ease;
+      -o-transition: 150ms ease;
+}
 
+form input:hover{
+      border-color: var(--accent-color);
+      
+}
 
+form input:focus{
+      outline: none;
+      border-color: var(--text-color);
+}
+
+div:has(input:focus) > label{
+      background-color: var(--text-color);
+}
+
+form input::placeholder{
+      color: var(--text-color);
+}
+
+form button{
+      margin-top: 10px;
+      border: none;
+      border-radius: 1000px;
+      -webkit-border-radius: 1000px;
+      -moz-border-radius: 1000px;
+      -ms-border-radius: 1000px;
+      -o-border-radius: 1000px;
+      padding: 0.85em 4em;
+      background-color: var(--accent-color);
+      color: var(--base-color);
+      font: inherit;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 150ms ease;
+      -webkit-transition: 150ms ease;
+      -moz-transition: 150ms ease;
+      -ms-transition: 150ms ease;
+      -o-transition: 150ms ease;
+}
+
+form button:hover{
+      background-color: var(--text-color);
+}
+
+form button:focus{
+      outline: none;
+      background-color: var(--text-color);
+}
+
+a{
+      text-decoration: none;
+      color: var(--accent-color);
+}
+
+a:hover{
+      text-decoration: underline;
+}
+
+@media(max-width: 1100 px){
+      .wrapper{
+      width: min(600px, 100%);
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+}
+}
+
+form div.incorrect label{
+      background-color: #f06272;
+}
+form div.incorrect input{
+      border-color: #f06272;
+}

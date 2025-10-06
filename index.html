@@ -3,13 +3,35 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>First Project</title>
+      <title>Learning GitHub</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-      <h1>First GitHub Project</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ipsam distinctio nulla facilis pariatur voluptates illum? Quaerat ducimus officia officiis?</p>
-      <h4>GitHub is easy</h4>
+      <div class="wrapper">
+            <h1>SignUp</h1>
+            <form>
+                  <div>
+                        <label for="firstname-input"><i class="fa-solid fa-person"></i></label>
+                        <input type="text" name="firstname" id="firstname-input" placeholder="Fristname">
+                  </div>
+                  <div>
+                        <label for="email">@</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                  </div>
+                  <div>
+                        <label for="password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                  </div>
+                  <div>
+                        <label for="repeat-password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password">
+                  </div>
+                  <button type="submit">Signup</button>
+            </form>
+            <p>Already have a account? <a href="login.html">Login</a></p>
+      </div>
       
 </body>
 </html>
